@@ -157,7 +157,9 @@ layout: center
 <summary>
 <time>
 ```
+
 https://web.dev/learn/html/semantic-html/
+
 ---
 
 # Use Semantic HTML first, ARIA second
