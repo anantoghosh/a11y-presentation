@@ -122,7 +122,7 @@ Here is another comment.
 - Each country requires a guideline according to the law they have established
   - https://www.w3.org/WAI/policies/
 - ADA Section 508 requires WCAG 2.0 Level AA Success Criteria
-  - Organizations and businesses with 25 or more employees are subject to ADA, and those with 15 or more employees must comply with Section 508.
+  - Organizations and businesses with 25 or more employees are subject to ADA, and those with 15 or more employees must comply with Section 508 if working in related to federal organisations.
 
 ---
 
