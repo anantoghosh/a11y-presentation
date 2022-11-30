@@ -142,8 +142,6 @@ layout: center
 
 # Use Semantic HTML first, ARIA second
 
-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
-
 ```html
 <article>
 <aside>
@@ -159,7 +157,7 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
 <summary>
 <time>
 ```
-
+https://web.dev/learn/html/semantic-html/
 ---
 
 # Use Semantic HTML first, ARIA second
