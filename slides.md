@@ -97,6 +97,7 @@ Here is another comment.
   - WAI guidelines: Web Content Accessibility Guidelines (WCAG), Authoring Tool Accessibility Guidelines (ATAG), and User Agent Accessibility Guidelines (UAAG).
 - **WCAG** are guidelines for creating accessible web content
 - **Accessible Rich Internet Applications (ARIA)** supplements HTML, is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.
+
 ---
 
 # WCAG
@@ -105,6 +106,14 @@ Here is another comment.
 - WCAG 2.0
 - WCAG 2.1
 - Has 3 Levels - A, AA, AAA
+
+---
+
+# a11y
+
+- Accessibility is abbreviated as a11y.
+- a - 11 characters - y
+- Pronounced "A-one-one-Y", "A-eleven-Y", and liberally as "ally"
 
 ---
 
