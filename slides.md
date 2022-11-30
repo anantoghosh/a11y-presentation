@@ -37,14 +37,43 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 ---
 
-# Disability Types
+# Types of disorders
+
 - Visual
+  - B/blindness, low vision, color blindness
 - Auditory
-- Motor
+  - D/deafness, hard of hearing (HoH), hearing impaired (HI)
+- Mobility
+  - Arthritis, paralysis, amputees, seizure disorders.
   - [Controller](https://www.xbox.com/en-US/accessories/controllers/xbox-adaptive-controller)
 - Cognitive
+  - Down's syndrome, A/autism, ADHD, dyslexia, aphasia.
 - Seizure and Vestibular Disorders
+  - Epilepsy, vertigo, dizziness, labyrinthitis, balance, and eye movement disorders.
+- Speech disorder
+  - apraxia, dysarthria, or stuttering.
 
+---
+
+# Why do we implement accessibility
+
+- The World Health Organization (WHO) estimates that over 15% of the world's population—or 1.3 billion people—self-identify as having a disability
+- More recent reports from the Centers for Disease Control and Prevention (CDC), the US Census, the Academic Network of European Disability experts (ANED), and others estimate the total number of people with disabilities to be even greater. This number continues to grow as the world population ages and faces chronic health conditions.
+
+---
+
+# Accessible content benefits non-disabled people too
+
+- Situationally disabled
+- Temporary disabled
+- Non native speaker
+- Young audience
+- Issues caused by aging
+- Better SEO
+
+More people end up using accessible features then estimated such as using Closed Captions, Siri/Google Assistant, Changing font-size, Gaming Controller.
+
+This ends up having a huge business impact.
 
 ---
 
@@ -147,7 +176,7 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
 </footer>
 ```
 
-View example on accessiblitly tree viewer.
+View example on accessibility tree viewer.
 
 ---
 
@@ -190,7 +219,8 @@ layout: center
 ---
 
 # 1. Not using semantic elements
-Page should have semantic meaning
+- Page should have semantic meaning
+- Use proper heading order
 
 ---
 layout: center
@@ -198,7 +228,7 @@ layout: center
 
 # 2. Incorrect tab-index
 
-- Only vaild values for tabindex are 0 and -1.
+- Only valid values for tabindex are 0 and -1.
 - Don't use tabindex for native interactive elements.
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
@@ -238,5 +268,11 @@ layout: center
 ---
 layout: center
 ---
+
+# 7. Page transitions not announcing loading (in an SPA
+)
+- Page should announce it's loading state
+- Document tile should change
+- Focus should move to main page heading 
 
 # End
