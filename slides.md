@@ -22,7 +22,8 @@ drawings:
 # use UnoCSS
 css: unocss
 layout: image
-image: bg.webp
+image: jest.png
+# background: jest.png
 ---
 
 <div class="abs-br m-6 flex gap-2">
@@ -37,251 +38,44 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 ---
 
-# Types of disorders
+# What is jest
 
-- Visual
-  - B/blindness, low vision, color blindness
-- Auditory
-  - D/deafness, hard of hearing (HoH), hearing impaired (HI)
-- Mobility
-  - Arthritis, paralysis, amputees, seizure disorders.
-  - [Controller](https://www.xbox.com/en-US/accessories/controllers/xbox-adaptive-controller)
-- Cognitive
-  - Down's syndrome, A/autism, ADHD, dyslexia, aphasia.
-- Seizure and Vestibular Disorders
-  - Epilepsy, vertigo, dizziness, labyrinthitis, balance, and eye movement disorders.
-- Speech disorder
-  - apraxia, dysarthria, or stuttering.
+- Jest is a popular JavaScript testing framework that is developed and maintained by [Simen Bekkhus](https://github.com/SimenB) at Facebook.
+- Jest is built on top of the Jasmine testing framework and it uses the Jasmine test runner (now jest-circus with v29) to execute tests and generate test results.
+- Jest is designed to be easy to set up and use, and it has a rich API that allows you to write tests for a wide range of scenarios, including unit tests, integration tests, and end-to-end tests.
+- Jest has built-in support for snapshot testing and mocking, which makes it well-suited for testing React applications.
+- Jest provides a number of additional features, such as code coverage reports and parallel test execution, that can help you improve the reliability and performance of your tests.
 
 ---
 
-# Why do we implement accessibility
+# What is jest
 
-- The World Health Organization (WHO) estimates that over 15% of the world's population—or 1.3 billion people—self-identify as having a disability
-- More recent reports from the Centers for Disease Control and Prevention (CDC), the US Census, the Academic Network of European Disability experts (ANED), and others estimate the total number of people with disabilities to be even greater. This number continues to grow as the world population ages and faces chronic health conditions.
+- Combination of
+  - Test runner
+  - Expect Library
+  - Mocking library
+  - Fake timer
+  - Code Coverage
+---
+
+# React Testing Library
+
+- It is maintained by a team of volunteers, led by Kent C. Dodds, and Sebastian Silbermann as a main contributer. It is widely supported and used by the React community.
+- It is built on top of the official react-dom/test-utils library.
+- It provides a more user-centric and intuitive API for testing React components.
+- It provides utility functions for rendering components, finding elements in the rendered output, and simulating user events.
+- It also provides utility functions for dealing with asynchronous updates to components.
+
+By using the React Testing Library, you can write more reliable and maintainable tests for your React components. This can help you catch bugs and regressions in your code, and it can also help you improve the design and usability of your components.
+
 
 ---
 
-# Accessible content benefits non-disabled people too
+# MSW
 
-- Situationally disabled
-- Temporary disabled
-- Non native speaker
-- Young audience
-- Issues caused by aging
-- Better SEO
+- MSW (Mock Service Worker) is a popular library for mocking HTTP requests in JavaScript.
+- MSW allows you to easily mock HTTP requests and responses in your tests, so you can test your code without relying on a real network connection.
+- It can mock different types of HTTP requests, such as GET, POST, PUT, and DELETE.
+- It can also delay responses or throw errors, that can help you test more complex scenarios.
 
-More people end up using accessible features then estimated such as using Closed Captions, Siri/Google Assistant, Changing font-size, Gaming Controller.
-
-This ends up having a huge business impact.
-
----
-
-# What is ADA?
-
-- The Americans with Disabilities Act (ADA) protects people with disabilities from discrimination.
-- ADA is set of US Laws
-- Under ADA is [Section 508](https://www.section508.gov/)
-
-<!--
-Here is another comment.
--->
-
----
-
-# W3C, WIA, ARIA
-
-- **W3C** develops open standards for the web.
-  - HTML, SVG, CSS, Internationalization, Accessibility and more
-- **W3C Web Accessibility Initiative** (WAI) develops standards and support materials to help you understand and implement accessibility.
-  - WAI guidelines: Web Content Accessibility Guidelines (WCAG), Authoring Tool Accessibility Guidelines (ATAG), and User Agent Accessibility Guidelines (UAAG).
-- **WCAG** are guidelines for creating accessible web content
-- **Accessible Rich Internet Applications (ARIA)** supplements HTML, is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.
-
----
-
-# WCAG
-
-- [Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/)
-- WCAG 2.0
-- WCAG 2.1
-- Has 3 Levels - A, AA, AAA
-
----
-
-# a11y
-
-- Accessibility is abbreviated as a11y.
-- a - 11 characters - y
-- Pronounced "A-one-one-Y", "A-eleven-Y", and liberally as "ally"
-
----
-
-# Which guideline/level to follow?
-
-- Each country requires a guideline according to the law they have established
-  - https://www.w3.org/WAI/policies/
-- ADA Section 508 requires WCAG 2.0 Level AA Success Criteria
-  - Organizations and businesses with 25 or more employees are subject to ADA, and those with 15 or more employees must comply with Section 508 if working in related to federal organisations.
-
----
-
-# How to check for compliance?
-
-- https://accessibilityinsights.io/
-- https://www.ibm.com/able/toolkit
-- Chrome Lighthouse
-
----
-layout: center
----
-
-# Tips
-
----
-
-# Use Semantic HTML first, ARIA second
-
-```html
-<article>
-<aside>
-<details>
-<figcaption>
-<figure>
-<footer>
-<header>
-<main>
-<mark>
-<nav>
-<section>
-<summary>
-<time>
-```
-
-https://web.dev/learn/html/semantic-html/
-
----
-
-# Use Semantic HTML first, ARIA second
-
-```html
-<header>
-  <nav>
-    <ul>
-      <li><a href="page1">Page 1</li>
-      <li><a href="page2">Page 2</li>
-    </ul>
-  </nav>
-</header>
-<article>
-  <h1>How to be semantic</h1>
-  <p>This is the description</p>
-</article>
-<aside>
-  Sidebar content
-</aside>
-<footer>
-  Footer content
-</footer>
-```
-
-View example on accessibility tree viewer.
-
----
-
-# ARIA roles
-
-
-```html
-<header> (banner)
-  <nav> (navigation)
-    <ul> (list)
-      <li>(list-item) <a href="page1"> (link) Page 1</li>
-      <li>(list-item) <a href="page2"> (link) Page 2</li>
-    </ul>
-  </nav>
-</header>
-<article> (article)
-  <h1>How to be semantic</h1> (heading)
-  <p>This is the description</p> (paragraph)
-</article>
-<aside> (complimentary)
-  Sidebar content
-</aside>
-<footer> (contentinfo)
-  Footer content
-</footer>
-```
-
-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
-
-Note: Instead of a `<div>` with an article role, use the `<article>` element. **Always use native element if available.**
-
----
-layout: center
----
-
-# Common Errors in the codebase
-
----
-layout: center
----
-
-# 1. Not using semantic elements
-- Page should have semantic meaning
-- Use proper heading order
-
----
-layout: center
----
-
-# 2. Incorrect tab-index
-
-- Only valid values for tabindex are 0 and -1.
-- Don't use tabindex for native interactive elements.
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
-
----
-layout: center
----
-
-# 3. aria-label everywhere
-
-- The aria-label attribute is intended for interactive elements only.
-- aria-label must only be used when there is no appropriate text visible in the DOM that could be referenced as a label.
-
----
-layout: center
----
-
-# 4. Not using native elements (or ionic elements)
-
-- Eg: ChallengeFeatureCard
-
----
-layout: center
----
-
-# 5. Using Nested interactive elements
-
-- Eg: ChallengeFeatureCard
-
----
-layout: center
----
-
-# 6. Using roles with native elements
-
-- Eg: ChallengeFeatureCard
----
-layout: center
----
-
-# 7. Page transitions not announcing loading (in an SPA
-)
-- Page should announce it's loading state
-- Document tile should change
-- Focus should move to main page heading 
-
-# End
+By using MSW, you can write more reliable and deterministic tests for your code that make HTTP requests.
